@@ -1,7 +1,7 @@
 # Smart India Hackathon Workshop
-# Date:
-## Register Number:
-## Name:
+# Date:16-12-2025
+## Register Number:212223220122
+## Name: varsha k
 ## Problem Title
 SIH 1710: Enhancing Navigation for Railway Station Facilities and Locations
 ## Problem Description
@@ -11,16 +11,81 @@ Background: Railway stations are complex environments with numerous facilities a
 Ministry of Railway
 
 ## Idea
-
+RailWayFinder – Beacon & AI Powered Indoor Navigation
 
 ## Proposed Solution / Architecture Diagram
 
+RailWayFinder uses Bluetooth Low Energy (BLE) beacons and an AI-based path engine to enable accurate indoor navigation inside railway stations without GPS.
+
+<img width="1536" height="1024" alt="64693dd4-82cc-4566-b643-b608f0d2b3ed" src="https://github.com/user-attachments/assets/ae50d4b4-6f64-494b-bbd1-9b5f2d879b86" />
+
 
 ## Use Cases
+## Passenger Use Cases
 
+Find the shortest route to platforms, exits, or facilities
+
+Get voice-guided navigation inside the station
+
+Receive alerts for platform changes
+
+Access wheelchair-friendly routes
+
+Navigate without internet (cached maps)
+## Station Admin Use Cases
+
+Update station layout digitally
+
+Enable or disable routes during maintenance
+
+Monitor crowd density
+
+Send emergency or rerouting alerts
+## Accessibility Use Cases
+
+Voice navigation for visually impaired passengers
+
+Vibration-based directions for hearing impaired
+
+Elevator-only routing for wheelchair users
 
 ## Technology Stack
-
+Layer	Technology
+Mobile Application	Flutter / Kotlin
+Beacon Communication	Bluetooth Low Energy (BLE 5.0)
+Backend API	FastAPI / Node.js
+Database	Neo4j (Graph DB)
+Real-time Data	Firebase
+Admin Dashboard	React.js
+Voice Guidance	Text-to-Speech APIs
+AI Path Logic	Dijkstra + ML Optimization
 
 ## Dependencies
+## Mobile App Dependencies
+
+flutter_blue_plus – BLE scanning
+
+provider – State management
+
+text_to_speech – Voice navigation
+
+path_provider – Offline map storage
+## Backend Dependencies
+
+fastapi – API framework
+
+uvicorn – Server runtime
+
+neo4j-driver – Graph database connection
+
+firebase-admin – Real-time updates
+## Admin Dashboard Dependencies
+
+react – UI framework
+
+axios – API communication
+
+chart.js – Crowd analytics
+
+leaflet – Indoor map visualization
 
